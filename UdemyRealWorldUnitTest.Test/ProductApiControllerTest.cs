@@ -34,7 +34,7 @@ namespace UdemyRealWorldUnitTest.Test
         }
 
         [Theory]
-        [InlineData(5,6,11)]
+        [MemberData(nameof(TestDataShare.AddTwoNumbersData), MemberType = typeof(TestDataShare))]
         public void Add_SampleValues_ReturnSum(int a, int b, int sum)
         {
             var result = _helper.add(a, b);

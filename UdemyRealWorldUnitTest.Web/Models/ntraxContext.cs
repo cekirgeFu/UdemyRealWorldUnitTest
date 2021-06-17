@@ -75,7 +75,7 @@ namespace UdemyRealWorldUnitTest.Web.Models
                 entity.Property(e => e.Stock).HasColumnName("stock");
             });
 
-            modelBuilder.HasSequence("elif");
+            //modelBuilder.HasSequence("elif");
 
             OnModelCreatingPartial(modelBuilder);
         }
